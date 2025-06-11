@@ -1,3 +1,13 @@
+// - Reads input data (from file or stdin)
+// - Encodes data into DNS queries
+// - Sends queries to DNS server
+// - Supports custom upstream DNS server (-u option)
+// - Handles data transmission in chunks
+
+// Key functions:
+// ProcessArguments() - Parses command line arguments
+// send_packet() - Prepares and sends DNS queries with encoded data
+
 #include "dns_sender_events.h"
 #include <arpa/inet.h>
 #include <arpa/nameser.h>

@@ -1,3 +1,13 @@
+// - Listens for incoming DNS queries on UDP port 53
+// - Processes incoming DNS packets
+// - Extracts embedded data from DNS queries
+// - Saves received data to specified destination
+// - Sends DNS responses back to clients
+
+// Key functions:
+// save_data() - Processes and saves received data from DNS queries
+// main() - Sets up UDP server and handles incoming DNS requests
+
 #include "dns_receiver_events.h"
 #include <stdio.h>
 #include <stdlib.h>
